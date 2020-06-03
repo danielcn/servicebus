@@ -1,5 +1,8 @@
 const azure = require('azure')
 
+const ENDPOINT=process.env.ENDPOINT
+console.log(ENDPOINT)
+
 const endpoint  = 'Endpoint=sb://sbs-node.servicebus.windows.net/;SharedAccessKeyName=sbspolicy;SharedAccessKey=/Al2zgLVz28K0rz2uLkqA3sEkMmKUCOvZnOzLYa7KmM='
 
 const serviceBusService = azure.createServiceBusService(endpoint);
